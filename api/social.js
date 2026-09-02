@@ -16,7 +16,7 @@ const YT_HANDLE     = 'psicojannyy';
 const YT_CHANNEL_ID = 'UCDzSqW143IYEdeBMtvVzWOg';
 
 /* Último dato verificado — se usa solo si TikTok no responde. */
-const FALLBACK = { followers: 48286, likes: 1034083, videos: 28 };
+const FALLBACK = { followers: 48703, likes: 1057080, videos: 28 };
 
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' +

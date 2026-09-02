@@ -186,8 +186,8 @@ Leídos del perfil público el 2026-09-02:
 | Dato | Valor |
 |---|---|
 | TikTok | [@jannypsico](https://www.tiktok.com/@jannypsico) — «Janny \| Psicología» |
-| Seguidores | ~48.3K |
-| Me gusta | ~1.03M |
+| Seguidores | ~48.7K |
+| Me gusta | ~1.06M |
 | Videos | 28 |
 | YouTube | [@psicojannyy](https://www.youtube.com/@psicojannyy) — «psicojanny», sin videos aún |
 | Instagram | [@vazquez_janny](https://www.instagram.com/vazquez_janny/) |
