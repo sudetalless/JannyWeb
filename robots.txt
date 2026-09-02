@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Herramientas internas, no aportan nada en buscadores
+Disallow: /api/
+Disallow: /preview-fonts.html
+Disallow: /assets/og-template.html
+
+Sitemap: https://jannyvazquez.vercel.app/sitemap.xml

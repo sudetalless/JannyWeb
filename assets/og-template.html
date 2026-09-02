@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>OG</title>
+<!--
+  Plantilla de la imagen para compartir en redes (1200×630).
+  Se renderiza con:  npm run og
+  Editar aquí y volver a correr el comando para regenerar assets/img/og.jpg
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Plus+Jakarta+Sans:wght@300..800&display=swap" rel="stylesheet" />
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ivory:#FCF9F6; --ink:#171225; --ink-2:#453D5C;
+    --violet:#7A5AF8; --violet-d:#5733D6; --rose:#FF6F91; --peach:#FFB489;
+  }
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    background:var(--ivory);
+    font-family:"Plus Jakarta Sans",system-ui,sans-serif;
+    color:var(--ink);
+    display:flex; position:relative;
+  }
+
+  /* blobs del hero */
+  .blob{position:absolute;border-radius:50%;filter:blur(80px)}
+  .b1{width:520px;height:520px;top:-160px;left:-90px;background:radial-gradient(circle,#C9B6FF,transparent 68%);opacity:.75}
+  .b2{width:420px;height:420px;bottom:-170px;left:240px;background:radial-gradient(circle,#FFC6D3,transparent 68%);opacity:.7}
+  .b3{width:360px;height:360px;top:200px;left:520px;background:radial-gradient(circle,#FFDCC0,transparent 68%);opacity:.65}
+  .grid{
+    position:absolute;inset:0;
+    background-image:linear-gradient(rgba(23,18,37,.06) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(23,18,37,.06) 1px,transparent 1px);
+    background-size:56px 56px;
+    -webkit-mask-image:radial-gradient(ellipse 75% 70% at 30% 45%,#000,transparent 78%);
+  }
+
+  .copy{
+    position:relative;z-index:2;
+    width:735px;padding:70px 0 70px 78px;
+    display:flex;flex-direction:column;justify-content:center;
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:11px;align-self:flex-start;
+    padding:11px 20px 11px 15px;border-radius:999px;
+    background:rgba(255,255,255,.72);border:1px solid rgba(23,18,37,.1);
+    font-size:17px;font-weight:600;color:var(--ink-2);margin-bottom:30px;
+  }
+  .eyebrow i{width:9px;height:9px;border-radius:50%;background:var(--violet)}
+
+  h1{
+    font-family:"Bricolage Grotesque",sans-serif;
+    font-size:112px;line-height:.88;letter-spacing:-.045em;font-weight:250;
+    font-variation-settings:"opsz" 96;
+    margin-bottom:26px;
+  }
+  h1 b{
+    display:block;font-weight:800;
+    background:linear-gradient(100deg,var(--violet-d) 0%,var(--violet) 38%,var(--rose) 78%,var(--peach) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  p.lead{font-size:25px;line-height:1.4;color:var(--ink-2);max-width:600px;font-weight:500}
+
+  .meta{display:flex;gap:34px;margin-top:38px;align-items:center}
+  .meta div{display:flex;flex-direction:column}
+  .meta b{
+    font-family:"Bricolage Grotesque",sans-serif;
+    font-size:38px;font-weight:600;letter-spacing:-.03em;color:var(--violet-d);line-height:1;
+  }
+  .meta small{font-size:15px;color:var(--ink-2);margin-top:4px}
+  .meta .sep{width:1px;height:42px;background:rgba(23,18,37,.14)}
+
+  /* retrato */
+  .photo{position:relative;z-index:2;width:465px;height:630px;overflow:hidden}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+  .photo::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg,var(--ivory) 0%,rgba(252,249,246,.35) 22%,transparent 55%);
+  }
+  .psi{
+    position:absolute;z-index:3;right:38px;bottom:32px;
+    width:58px;height:58px;border-radius:50%;
+    background:var(--ink);color:#fff;
+    display:grid;place-items:center;
+    font-family:Georgia,serif;font-size:28px;
+  }
+</style>
+</head>
+<body>
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+  <span class="grid"></span>
+
+  <div class="copy">
+    <span class="eyebrow"><i></i> Estudiante de Psicología · Creadora de contenido</span>
+    <h1>Janny<b>Vázquez</b></h1>
+    <p class="lead">Psicología que sí se comparte: salud mental, hábitos de estudio y conducta humana, explicados fácil.</p>
+    <div class="meta">
+      <div><b id="followers">48.3K</b><small>seguidores</small></div>
+      <span class="sep"></span>
+      <div><b id="likes">1.03M</b><small>me gusta</small></div>
+      <span class="sep"></span>
+      <div><b>Ψ</b><small>5.º semestre</small></div>
+    </div>
+  </div>
+
+  <div class="photo">
+    <img src="img/janny-hero.jpg" alt="" />
+  </div>
+  <span class="psi">Ψ</span>
+</body>
+</html>

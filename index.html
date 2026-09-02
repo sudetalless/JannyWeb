@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+<title>Janny Vázquez — Psicología &amp; Divulgación</title>
+<meta name="description" content="Portafolio de Janny Vázquez: estudiante de Psicología en la Universidad Bicentenaria de Aragua y creadora de contenido. Divulgación sobre salud mental, hábitos de estudio y conducta humana." />
+<meta name="author" content="Janny Vázquez" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+
+<!-- Al comprar el dominio: npm run domain https://tudominio.com -->
+<link rel="canonical" href="https://jannyvazquez.vercel.app/" />
+
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#FCF9F6" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#100C1B" />
+<meta name="color-scheme" content="light" />
+
+<!-- Open Graph (las URLs deben ser absolutas o no se ve la vista previa) -->
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Janny Vázquez" />
+<meta property="og:title" content="Janny Vázquez — Psicología &amp; Divulgación" />
+<meta property="og:description" content="Psicología que sí se comparte: salud mental, hábitos de estudio y conducta humana, explicados fácil. Comunidad de más de 48 mil personas." />
+<meta property="og:url" content="https://jannyvazquez.vercel.app/" />
+<meta property="og:image" content="https://jannyvazquez.vercel.app/assets/img/og.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Janny Vázquez, estudiante de Psicología y creadora de contenido" />
+<meta property="og:locale" content="es_ES" />
+<meta property="profile:first_name" content="Janny" />
+<meta property="profile:last_name" content="Vázquez" />
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Janny Vázquez — Psicología &amp; Divulgación" />
+<meta name="twitter:description" content="Psicología que sí se comparte: salud mental, hábitos de estudio y conducta humana, explicados fácil." />
+<meta name="twitter:image" content="https://jannyvazquez.vercel.app/assets/img/og.jpg" />
+<meta name="twitter:image:alt" content="Janny Vázquez, estudiante de Psicología y creadora de contenido" />
+
+<!-- Iconos -->
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/assets/img/apple-touch.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Datos estructurados: ayuda a Google a entender de quién es la página -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Janny Vázquez",
+  "alternateName": "Janny | Psicología",
+  "url": "https://jannyvazquez.vercel.app/",
+  "image": "https://jannyvazquez.vercel.app/assets/img/og.jpg",
+  "jobTitle": "Estudiante de Psicología y divulgadora de salud mental",
+  "description": "Estudiante de Psicología en la Universidad Bicentenaria de Aragua y creadora de contenido sobre salud mental, hábitos de estudio y conducta humana.",
+  "knowsLanguage": "es",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidad Bicentenaria de Aragua"
+  },
+  "knowsAbout": [
+    "Psicología",
+    "Salud mental",
+    "Neurociencia",
+    "Hábitos de estudio",
+    "Divulgación científica"
+  ],
+  "sameAs": [
+    "https://www.tiktok.com/@jannypsico",
+    "https://www.instagram.com/vazquez_janny/",
+    "https://www.youtube.com/@psicojannyy",
+    "https://www.facebook.com/jannyvazquez19/"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Plus+Jakarta+Sans:wght@300..800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<!-- ══════════════════ PRELOADER ══════════════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <span class="loader__psi">Ψ</span>
+    <span class="loader__name">Janny Vázquez</span>
+    <span class="loader__bar"><i></i></span>
+  </div>
+</div>
+
+<!-- ══════════════════ CURSOR (desktop) ══════════════════ -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- ══════════════════ SCROLL PROGRESS ══════════════════ -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<a class="skip" href="#sobre">Saltar al contenido</a>
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#inicio" class="brand" data-cursor="link">
+      <span class="brand__mark">Ψ</span>
+      <span class="brand__text">Janny&nbsp;Vázquez</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="#sobre">Sobre mí</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#enfoque">Enfoque</a>
+      <a href="#contenido">Contenido</a>
+      <a href="#portafolio">Portafolio</a>
+    </nav>
+
+    <a href="#contacto" class="btn btn--sm btn--dark nav__cta" data-magnetic data-cursor="link">Contacto</a>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ══════════════════ MOBILE MENU ══════════════════ -->
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu__links">
+    <a href="#sobre"><span>01</span>Sobre mí</a>
+    <a href="#trayectoria"><span>02</span>Trayectoria</a>
+    <a href="#enfoque"><span>03</span>Enfoque</a>
+    <a href="#contenido"><span>04</span>Contenido</a>
+    <a href="#portafolio"><span>05</span>Portafolio</a>
+    <a href="#contacto"><span>06</span>Contacto</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="https://www.tiktok.com/@jannypsico" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://www.instagram.com/vazquez_janny/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@psicojannyy" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.facebook.com/jannyvazquez19/" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</div>
+
+<main>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero__bg" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+    <span class="grid-lines"></span>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow reveal"><i></i> Estudiante de Psicología · Creadora de contenido</p>
+
+      <h1 class="hero__title">
+        <span class="mask"><span class="mask__i">Janny</span></span>
+        <span class="mask"><span class="mask__i"><em>Vázquez</em></span></span>
+      </h1>
+
+      <p class="hero__lead reveal" style="--d:.35s">
+        Hola, mi corazón. Traduzco la psicología a un lenguaje que se entiende:
+        salud mental, hábitos de estudio y todo eso que nos pasa por dentro y casi
+        nadie explica. Estudio, comparto y aprendo en voz alta ante una comunidad
+        que no para de crecer.
+      </p>
+
+      <div class="hero__cta reveal" style="--d:.45s">
+        <a href="#contenido" class="btn btn--dark" data-magnetic data-cursor="link">
+          Ver mi contenido
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5" /></svg>
+        </a>
+        <a href="#sobre" class="btn btn--ghost" data-cursor="link">Conóceme</a>
+      </div>
+
+      <ul class="hero__socials reveal" style="--d:.55s">
+        <li><a href="https://www.tiktok.com/@jannypsico" target="_blank" rel="noopener" aria-label="TikTok" data-cursor="link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8a4.3 4.3 0 0 1-1-2.8h-3v11.4a2.5 2.5 0 1 1-1.8-2.4V8.9a5.6 5.6 0 1 0 4.8 5.5V9.3a7.2 7.2 0 0 0 4.2 1.3V7.6a4.3 4.3 0 0 1-3.2-1.8Z"/></svg>
+        </a></li>
+        <li><a href="https://www.instagram.com/vazquez_janny/" target="_blank" rel="noopener" aria-label="Instagram" data-cursor="link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2"/></svg>
+        </a></li>
+        <li><a href="https://www.youtube.com/@psicojannyy" target="_blank" rel="noopener" aria-label="YouTube" data-cursor="link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5v5l4.2-2.5z"/></svg>
+        </a></li>
+        <li><a href="https://www.facebook.com/jannyvazquez19/" target="_blank" rel="noopener" aria-label="Facebook" data-cursor="link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.6c-.3 0-1.2-.1-2.2-.1-2.3 0-3.8 1.4-3.8 3.9v2.1H8.5V12H11v9.5h3V12h2.5l.4-3.5H14Z"/></svg>
+        </a></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual">
+      <div class="portrait" data-tilt>
+        <span class="portrait__ring" aria-hidden="true"></span>
+        <div class="portrait__frame">
+          <picture>
+            <source srcset="assets/img/janny-hero.webp" type="image/webp" />
+            <img src="assets/img/janny-hero.jpg" width="900" height="1200"
+                 alt="Janny Vázquez con su uniforme de psicología" fetchpriority="high" />
+          </picture>
+        </div>
+
+        <div class="chip chip--a" aria-hidden="true">
+          <b>Ψ</b> 5.º semestre
+        </div>
+        <div class="chip chip--b" aria-hidden="true">
+          <span class="dot"></span>
+          <b class="counter" data-to="48286" data-fmt="compact" data-live="tiktok.followers">48.3K</b>
+          en TikTok
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#sobre" class="scroll-cue" aria-label="Desplazarse hacia abajo">
+    <span class="scroll-cue__line"></span> Scroll
+  </a>
+</section>
+
+<!-- ══════════════════ MARQUEE ══════════════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Salud mental</span><i>Ψ</i><span>Conducta humana</span><i>Ψ</i>
+    <span>Hábitos de estudio</span><i>Ψ</i><span>Neurociencia</span><i>Ψ</i>
+    <span>Divulgación</span><i>Ψ</i><span>Bienestar</span><i>Ψ</i>
+    <span>Salud mental</span><i>Ψ</i><span>Conducta humana</span><i>Ψ</i>
+    <span>Hábitos de estudio</span><i>Ψ</i><span>Neurociencia</span><i>Ψ</i>
+    <span>Divulgación</span><i>Ψ</i><span>Bienestar</span><i>Ψ</i>
+  </div>
+</div>
+
+<!-- ══════════════════ SOBRE MÍ ══════════════════ -->
+<section class="section about" id="sobre">
+  <div class="container about__grid">
+
+    <div class="about__media reveal">
+      <div class="about__img" data-parallax="0.08">
+        <picture>
+          <source srcset="assets/img/janny-about.webp" type="image/webp" />
+          <img src="assets/img/janny-about.jpg" width="840" height="1120"
+               alt="Retrato de Janny Vázquez" loading="lazy" />
+        </picture>
+      </div>
+      <div class="quote">
+        <span aria-hidden="true">“</span>
+        Creé este espacio para explicarte los misterios de la mente humana.
+      </div>
+    </div>
+
+    <div class="about__copy">
+      <p class="label reveal">01 — Sobre mí</p>
+      <h2 class="h2 reveal" style="--d:.08s">
+        Estudiante de <em>Psicología</em>, curiosa por oficio y divulgadora por vocación.
+      </h2>
+
+      <div class="prose reveal" style="--d:.16s">
+        <p>
+          Soy Janny. Curso el <strong>quinto semestre de Psicología en la
+          Universidad Bicentenaria de Aragua</strong>, y desde que empecé la carrera entendí algo:
+          el conocimiento que se queda encerrado en un apunte no le sirve a nadie.
+        </p>
+        <p>
+          Por eso comparto. En TikTok y YouTube explico los misterios de la mente humana con el mismo
+          lenguaje con el que se lo contaría a una amiga —<strong>ciencia, mente y crecimiento</strong>—
+          sin tecnicismos vacíos, sin promesas mágicas y sin perder el rigor de lo que estudio.
+        </p>
+        <p>
+          Este espacio es mi portafolio en construcción, mi corazón: aquí irán mis proyectos,
+          mis apuntes públicos y todo lo que venga después de la carrera.
+        </p>
+      </div>
+
+      <div class="stats reveal" style="--d:.24s">
+        <div class="stat">
+          <b class="counter" data-to="48286" data-fmt="compact" data-live="tiktok.followers">48.3K</b>
+          <small>Seguidores en TikTok</small>
+        </div>
+        <div class="stat">
+          <b class="counter" data-to="1034083" data-fmt="compact" data-live="tiktok.likes">1.03M</b>
+          <small>Me gusta acumulados</small>
+        </div>
+        <div class="stat">
+          <b class="counter" data-to="28" data-live="tiktok.videos">28</b>
+          <small>Videos publicados</small>
+        </div>
+        <div class="stat">
+          <b class="counter" data-to="5" data-suffix=".º">0</b>
+          <small>Semestre de Psicología</small>
+        </div>
+      </div>
+      <p class="live-note reveal" style="--d:.3s" id="liveNote" hidden>
+        <span class="live"></span> Datos actualizados en vivo desde TikTok
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ TRAYECTORIA ══════════════════ -->
+<section class="section timeline-sec" id="trayectoria">
+  <div class="container">
+    <header class="sec-head">
+      <p class="label reveal">02 — Trayectoria</p>
+      <h2 class="h2 reveal" style="--d:.08s">El camino, <em>paso a paso</em></h2>
+      <p class="sec-head__lead reveal" style="--d:.16s">
+        Una carrera se construye en capas. Estas son las mías, hasta hoy.
+      </p>
+    </header>
+
+    <div class="timeline-wrap">
+    <span class="timeline__rail" aria-hidden="true"><i></i></span>
+    <ol class="timeline" id="timeline">
+
+      <li class="tl reveal">
+        <span class="tl__dot" aria-hidden="true"></span>
+        <div class="tl__card" data-spotlight>
+          <p class="tl__meta">Inicio</p>
+          <h3>Ingreso a Psicología</h3>
+          <p>Empieza la carrera en la Universidad Bicentenaria de Aragua: primeros contactos con la psicología general, la historia de la disciplina y el método científico aplicado a la conducta.</p>
+        </div>
+      </li>
+
+      <li class="tl reveal">
+        <span class="tl__dot" aria-hidden="true"></span>
+        <div class="tl__card" data-spotlight>
+          <p class="tl__meta">Semestres 1 – 3</p>
+          <h3>Bases teóricas</h3>
+          <p>Fundamentos duros: bases biológicas de la conducta, procesos cognitivos, estadística y metodología de la investigación.</p>
+        </div>
+      </li>
+
+      <li class="tl reveal">
+        <span class="tl__dot" aria-hidden="true"></span>
+        <div class="tl__card" data-spotlight>
+          <p class="tl__meta">En paralelo</p>
+          <h3>Nace la divulgación</h3>
+          <p>Empieza a compartir apuntes, métodos de estudio y contenido de psicología en TikTok. La comunidad crece hasta decenas de miles de personas.</p>
+        </div>
+      </li>
+
+      <li class="tl reveal">
+        <span class="tl__dot" aria-hidden="true"></span>
+        <div class="tl__card tl__card--now" data-spotlight>
+          <p class="tl__meta"><span class="live"></span> Actualidad</p>
+          <h3>5.º semestre</h3>
+          <p>Profundización en psicopatología, evaluación psicológica y procesos clínicos, combinando la formación académica con la creación de contenido.</p>
+        </div>
+      </li>
+
+      <li class="tl reveal">
+        <span class="tl__dot" aria-hidden="true"></span>
+        <div class="tl__card tl__card--next" data-spotlight>
+          <p class="tl__meta">Siguiente capítulo</p>
+          <h3>Prácticas y campo</h3>
+          <p>Prácticas profesionales, primeras experiencias con pacientes y proyectos de investigación que se irán publicando en este portafolio.</p>
+        </div>
+      </li>
+    </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ ENFOQUE ══════════════════ -->
+<section class="section focus" id="enfoque">
+  <div class="container">
+    <header class="sec-head">
+      <p class="label reveal">03 — Enfoque</p>
+      <h2 class="h2 reveal" style="--d:.08s">Los temas que <em>me mueven</em></h2>
+    </header>
+
+    <div class="cards">
+      <article class="card reveal" data-spotlight data-tilt>
+        <span class="card__num">01</span>
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10Z"/></svg>
+        </div>
+        <h3>Salud mental</h3>
+        <p>Ansiedad, autoestima y regulación emocional explicados sin romantizar el malestar ni vender soluciones rápidas.</p>
+      </article>
+
+      <article class="card reveal" style="--d:.06s" data-spotlight data-tilt>
+        <span class="card__num">02</span>
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 3a3 3 0 0 0-3 3 3 3 0 0 0-1 5.8A3 3 0 0 0 8 17a3 3 0 0 0 4 2V3.9A3 3 0 0 0 9 3Zm6 0a3 3 0 0 1 3 3 3 3 0 0 1 1 5.8A3 3 0 0 1 16 17a3 3 0 0 1-4 2"/></svg>
+        </div>
+        <h3>Neurociencia y conducta</h3>
+        <p>Qué ocurre en el cerebro cuando aprendemos, procrastinamos, dormimos mal o nos enamoramos.</p>
+      </article>
+
+      <article class="card reveal" style="--d:.12s" data-spotlight data-tilt>
+        <span class="card__num">03</span>
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 5h11a3 3 0 0 1 3 3v11M4 5v11a3 3 0 0 0 3 3h11M8 9h6M8 13h4"/></svg>
+        </div>
+        <h3>Hábitos de estudio</h3>
+        <p>Métodos con respaldo: repaso espaciado, recuperación activa y apuntes que de verdad funcionan.</p>
+      </article>
+
+      <article class="card reveal" style="--d:.18s" data-spotlight data-tilt>
+        <span class="card__num">04</span>
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0M16 5.5a3 3 0 0 1 0 5M18.5 3a6 6 0 0 1 0 10"/></svg>
+        </div>
+        <h3>Divulgación responsable</h3>
+        <p>Contenido claro para redes, con fuentes, matices y el recordatorio de que un video nunca reemplaza a la terapia.</p>
+      </article>
+
+      <article class="card reveal" style="--d:.24s" data-spotlight data-tilt>
+        <span class="card__num">05</span>
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg>
+        </div>
+        <h3>Bienestar juvenil</h3>
+        <p>Cómo viven la salud mental los estudiantes: burnout académico, comparación en redes y presión por rendir.</p>
+      </article>
+
+      <article class="card reveal" style="--d:.3s" data-spotlight data-tilt>
+        <span class="card__num">06</span>
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V4M16 19v-7M22 19H2"/></svg>
+        </div>
+        <h3>Investigación</h3>
+        <p>Leer papers, entender datos y traducirlos: el puente entre la academia y quien la necesita.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTENIDO (dark) ══════════════════ -->
+<section class="section content-sec" id="contenido">
+  <div class="content-sec__glow" aria-hidden="true"></div>
+  <div class="container">
+    <header class="sec-head sec-head--center">
+      <p class="label reveal">04 — Contenido</p>
+      <h2 class="h2 reveal" style="--d:.08s">Psicología que <em>sí se comparte</em></h2>
+      <p class="sec-head__lead reveal" style="--d:.16s">
+        Formato corto, fondo serio. Miles de personas ya aprenden aquí cada semana.
+      </p>
+    </header>
+
+    <div class="socials-grid">
+      <a class="social social--tiktok reveal" href="https://www.tiktok.com/@jannypsico" target="_blank" rel="noopener" data-cursor="link" data-tilt="4.5">
+        <div class="social__top">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8a4.3 4.3 0 0 1-1-2.8h-3v11.4a2.5 2.5 0 1 1-1.8-2.4V8.9a5.6 5.6 0 1 0 4.8 5.5V9.3a7.2 7.2 0 0 0 4.2 1.3V7.6a4.3 4.3 0 0 1-3.2-1.8Z"/></svg>
+          <span class="social__arrow" aria-hidden="true">↗</span>
+        </div>
+        <p class="social__handle">@jannypsico</p>
+        <p class="social__count">
+          <b class="counter" data-to="48286" data-fmt="compact" data-live="tiktok.followers">48.3K</b>
+          <span>seguidores</span>
+        </p>
+        <p class="social__desc">
+          <b class="counter" data-to="1034083" data-fmt="compact" data-live="tiktok.likes">1.03M</b> me gusta ·
+          <b class="counter" data-to="28" data-live="tiktok.videos">28</b> videos
+        </p>
+      </a>
+
+      <a class="social social--yt reveal" style="--d:.06s" href="https://www.youtube.com/@psicojannyy" target="_blank" rel="noopener" data-cursor="link" data-tilt="4.5">
+        <div class="social__top">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5v5l4.2-2.5z"/></svg>
+          <span class="social__arrow" aria-hidden="true">↗</span>
+        </div>
+        <p class="social__handle">@psicojannyy</p>
+        <p class="social__count">Formato largo</p>
+        <p class="social__desc">Los misterios de la mente, explicados con calma.</p>
+      </a>
+
+      <a class="social social--ig reveal" style="--d:.12s" href="https://www.instagram.com/vazquez_janny/" target="_blank" rel="noopener" data-cursor="link" data-tilt="4.5">
+        <div class="social__top">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2"/></svg>
+          <span class="social__arrow" aria-hidden="true">↗</span>
+        </div>
+        <p class="social__handle">@vazquez_janny</p>
+        <p class="social__count">El día a día</p>
+        <p class="social__desc">Detrás de cámara, apuntes y vida universitaria.</p>
+      </a>
+
+      <a class="social social--fb reveal" style="--d:.18s" href="https://www.facebook.com/jannyvazquez19/" target="_blank" rel="noopener" data-cursor="link" data-tilt="4.5">
+        <div class="social__top">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.6c-.3 0-1.2-.1-2.2-.1-2.3 0-3.8 1.4-3.8 3.9v2.1H8.5V12H11v9.5h3V12h2.5l.4-3.5H14Z"/></svg>
+          <span class="social__arrow" aria-hidden="true">↗</span>
+        </div>
+        <p class="social__handle">Janny Vázquez</p>
+        <p class="social__count">Comunidad</p>
+        <p class="social__desc">Publicaciones más largas y contacto cercano.</p>
+      </a>
+    </div>
+
+    <!-- Videos reales. Los de abajo son el respaldo; si /api/social responde,
+         se reemplazan por los más recientes antes de cargar el script de TikTok. -->
+    <div class="embed reveal" id="ttEmbed">
+      <div class="embed__head">
+        <span class="live"></span> Videos de <b>@jannypsico</b>
+      </div>
+      <div class="tt-grid" id="ttVideos">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jannypsico/video/7643969020986789141" data-video-id="7643969020986789141">
+          <section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@jannypsico/video/7643969020986789141">El miedo a equivocarnos — ver en TikTok</a></section>
+        </blockquote>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jannypsico/video/7645456455562235157" data-video-id="7645456455562235157">
+          <section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@jannypsico/video/7645456455562235157">Si te quito tu título — ver en TikTok</a></section>
+        </blockquote>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@jannypsico/video/7654739502790937876" data-video-id="7654739502790937876">
+          <section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@jannypsico/video/7654739502790937876">Dejar de hacer lo que amas — ver en TikTok</a></section>
+        </blockquote>
+      </div>
+      <noscript>
+        <p class="embed__fallback">
+          Activa JavaScript o
+          <a href="https://www.tiktok.com/@jannypsico" target="_blank" rel="noopener">mira los videos en TikTok</a>.
+        </p>
+      </noscript>
+    </div>
+
+    <!-- Se rellena solo cuando el canal publique videos (RSS público) -->
+    <div class="yt-block" id="ytBlock" hidden>
+      <div class="embed__head"><span class="live"></span> Últimos videos en <b>YouTube</b></div>
+      <div class="yt-grid" id="ytGrid" hidden></div>
+    </div>
+
+    <div class="content-sec__cta reveal">
+      <a class="btn btn--light" href="https://www.tiktok.com/@jannypsico" target="_blank" rel="noopener" data-magnetic data-cursor="link">
+        Seguir en TikTok
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg>
+      </a>
+      <a class="btn btn--outline" href="https://www.youtube.com/@psicojannyy" target="_blank" rel="noopener" data-magnetic data-cursor="link">
+        Suscribirse en YouTube
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ PORTAFOLIO ══════════════════ -->
+<section class="section portfolio" id="portafolio">
+  <div class="container">
+    <header class="sec-head">
+      <p class="label reveal">05 — Portafolio</p>
+      <h2 class="h2 reveal" style="--d:.08s">Un espacio que <em>crece conmigo</em></h2>
+      <p class="sec-head__lead reveal" style="--d:.16s">
+        Aquí se irán publicando trabajos académicos, proyectos y colaboraciones a medida que avanzo en la carrera.
+      </p>
+    </header>
+
+    <div class="pf-grid">
+      <article class="pf reveal" data-spotlight>
+        <span class="pf__tag">Próximamente</span>
+        <h3>Trabajos de investigación</h3>
+        <p>Ensayos, revisiones y proyectos metodológicos desarrollados durante la carrera.</p>
+        <span class="pf__plus" aria-hidden="true"></span>
+      </article>
+      <article class="pf reveal" style="--d:.08s" data-spotlight>
+        <span class="pf__tag">Próximamente</span>
+        <h3>Prácticas profesionales</h3>
+        <p>Experiencias de campo, instituciones y aprendizajes documentados.</p>
+        <span class="pf__plus" aria-hidden="true"></span>
+      </article>
+      <article class="pf reveal" style="--d:.16s" data-spotlight>
+        <span class="pf__tag">Próximamente</span>
+        <h3>Colaboraciones</h3>
+        <p>Marcas, campañas de salud mental y proyectos con otros divulgadores.</p>
+        <span class="pf__plus" aria-hidden="true"></span>
+      </article>
+      <article class="pf reveal" style="--d:.24s" data-spotlight>
+        <span class="pf__tag">Próximamente</span>
+        <h3>Recursos descargables</h3>
+        <p>Guías, plantillas de estudio y material gratuito para estudiantes.</p>
+        <span class="pf__plus" aria-hidden="true"></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACTO ══════════════════ -->
+<section class="section contact" id="contacto">
+  <div class="container contact__grid">
+    <div class="contact__copy">
+      <p class="label reveal">06 — Contacto</p>
+      <h2 class="h2 reveal" style="--d:.08s">¿Colaboramos, o simplemente <em>quieres saludar</em>?</h2>
+      <p class="prose reveal" style="--d:.16s">
+        Estoy abierta a colaboraciones de marca, entrevistas, proyectos de divulgación
+        y a cualquier duda sobre la carrera. Escríbeme, mi corazón, y te respondo.
+      </p>
+
+      <ul class="contact__list reveal" style="--d:.24s">
+        <li><span>Email</span><a href="mailto:hola@jannyvazquez.com" data-cursor="link">hola@jannyvazquez.com</a></li>
+        <li><span>TikTok</span><a href="https://www.tiktok.com/@jannypsico" target="_blank" rel="noopener" data-cursor="link">@jannypsico</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/vazquez_janny/" target="_blank" rel="noopener" data-cursor="link">@vazquez_janny</a></li>
+      </ul>
+    </div>
+
+    <form class="form reveal" style="--d:.12s" id="form" novalidate>
+      <div class="field">
+        <input type="text" id="nombre" name="nombre" required placeholder=" " autocomplete="name" />
+        <label for="nombre">Tu nombre</label>
+      </div>
+      <div class="field">
+        <input type="email" id="email" name="email" required placeholder=" " autocomplete="email" />
+        <label for="email">Tu email</label>
+      </div>
+      <div class="field">
+        <select id="motivo" name="motivo">
+          <option>Colaboración de marca</option>
+          <option>Entrevista o podcast</option>
+          <option>Duda sobre la carrera</option>
+          <option>Otro</option>
+        </select>
+        <label for="motivo" class="label-static">Motivo</label>
+      </div>
+      <div class="field">
+        <textarea id="mensaje" name="mensaje" rows="4" required placeholder=" "></textarea>
+        <label for="mensaje">Tu mensaje</label>
+      </div>
+      <button type="submit" class="btn btn--dark btn--full" data-magnetic data-cursor="link">
+        Enviar mensaje
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5"/></svg>
+      </button>
+      <p class="form__note" id="formNote" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__big" aria-hidden="true">
+      <span class="mask"><span class="mask__i">Janny Vázquez</span></span>
+    </div>
+    <p class="footer__sign">Gracias por pasar, mi corazón. 🌸</p>
+
+    <div class="footer__row">
+      <p>© <span id="year">2026</span> Janny Vázquez · Portafolio de Psicología</p>
+      <nav class="footer__links">
+        <a href="https://www.tiktok.com/@jannypsico" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.instagram.com/vazquez_janny/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@psicojannyy" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.facebook.com/jannyvazquez19/" target="_blank" rel="noopener">Facebook</a>
+        <a href="#inicio">Volver arriba ↑</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

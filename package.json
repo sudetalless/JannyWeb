@@ -1,0 +1,17 @@
+{
+  "name": "janny-vazquez-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page / portafolio de Janny Vazquez - Psicologia y divulgacion",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "start": "node dev-server.js",
+    "refresh": "node scripts/refresh-stats.js",
+    "assets": "node scripts/make-assets.js",
+    "domain": "node scripts/set-domain.js"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.43.1",
+    "sharp": "^0.35.4"
+  }
+}

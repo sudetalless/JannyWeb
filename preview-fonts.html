@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tipografías — Janny Vázquez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Syne:wght@400..800&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:wght@300..800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ivory:#FCF9F6; --ink:#171225; --ink2:#453D5C; --ink3:#7A7291;
+    --violet:#7A5AF8; --violet-d:#5733D6; --rose:#FF6F91; --peach:#FFB489;
+    --line:rgba(23,18,37,.10);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ivory);color:var(--ink);
+       font-family:"Plus Jakarta Sans",system-ui,sans-serif;padding:3rem 1.5rem 6rem}
+  .wrap{max-width:1100px;margin:auto}
+  h1{font-size:1.2rem;font-weight:700;margin:0 0 .4rem}
+  .sub{color:var(--ink2);margin:0 0 2.5rem;font-size:.95rem;max-width:60ch}
+  .sub code{background:#fff;border:1px solid var(--line);padding:.1rem .4rem;border-radius:5px;font-size:.85em}
+
+  .opt{background:#fff;border:1px solid var(--line);border-radius:22px;
+       padding:2rem clamp(1.2rem,3vw,2.4rem);margin-bottom:1.1rem;
+       transition:box-shadow .3s,border-color .3s}
+  .opt:hover{box-shadow:0 24px 50px -30px rgba(23,18,37,.35);border-color:rgba(122,90,248,.35)}
+  .tag{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem;margin-bottom:1.2rem}
+  .num{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;
+       background:var(--ink);color:#fff;font-size:.72rem;font-weight:700}
+  .name{font-weight:700;font-size:.95rem}
+  .desc{color:var(--ink3);font-size:.85rem}
+  .cur{background:var(--violet);color:#fff;font-size:.64rem;font-weight:700;
+       letter-spacing:.1em;text-transform:uppercase;padding:.22rem .55rem;border-radius:999px}
+
+  .lockup{line-height:.86;letter-spacing:-.045em;margin:0}
+  .lockup .a{display:block;font-weight:300}
+  .lockup .b{display:block;font-style:italic;font-weight:400;
+       background:linear-gradient(100deg,var(--violet-d),var(--violet) 38%,var(--rose) 78%,var(--peach));
+       -webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+  .lockup{font-size:clamp(3rem,10vw,7rem)}
+  .h2demo{font-size:clamp(1.3rem,2.6vw,2rem);font-weight:400;line-height:1.1;
+          letter-spacing:-.025em;margin:1.4rem 0 0;color:var(--ink2)}
+  .h2demo em{font-style:italic;color:var(--violet-d)}
+
+  /* Fuentes por opción */
+  .f1{font-family:"Fraunces",serif}
+  .f2{font-family:"Instrument Serif",serif}
+  .f3{font-family:"Playfair Display",serif}
+  .f4{font-family:"Bricolage Grotesque",sans-serif}
+  .f5{font-family:"Syne",sans-serif}
+  .f6{font-family:"DM Serif Display",serif}
+  .f7{font-family:"Outfit",sans-serif}
+  .f8{font-family:"Cormorant Garamond",serif}
+  /* ajustes por familia */
+  .f2 .a,.f6 .a,.f8 .a{font-weight:400}
+  .f4 .a{font-weight:300} .f4 .b{font-style:normal;font-weight:700}
+  .f5 .a{font-weight:400} .f5 .b{font-style:normal;font-weight:700}
+  .f7 .a{font-weight:200} .f7 .b{font-style:normal;font-weight:600}
+  .f8 .a{font-weight:300} .f8 .lockup{letter-spacing:-.02em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>¿Cuál te gusta para el nombre?</h1>
+  <p class="sub">
+    Así se vería el hero real. Dime el número y lo aplico a todo el sitio (titulares,
+    nombres de sección y footer). La tipografía del texto corrido sigue siendo
+    <code>Plus Jakarta Sans</code> en todos los casos.
+  </p>
+
+  <div class="opt f1">
+    <div class="tag"><span class="num">1</span><span class="name">Fraunces</span>
+      <span class="cur">actual</span>
+      <span class="desc">Serif suave y algo “wonky”. Cálida, con personalidad.</span></div>
+    <p class="lockup"><span class="a">Janny</span><span class="b">Vázquez</span></p>
+    <p class="h2demo">Estudiante de <em>Psicología</em>, curiosa por oficio.</p>
+  </div>
+
+  <div class="opt f2">
+    <div class="tag"><span class="num">2</span><span class="name">Instrument Serif</span>
+      <span class="desc">Editorial, alto contraste. Elegante y muy actual.</span></div>
+    <p class="lockup"><span class="a">Janny</span><span class="b">Vázquez</span></p>
+    <p class="h2demo">Estudiante de <em>Psicología</em>, curiosa por oficio.</p>
+  </div>
+
+  <div class="opt f3">
+    <div class="tag"><span class="num">3</span><span class="name">Playfair Display</span>
+      <span class="desc">Serif clásica de revista. Sofisticada, femenina.</span></div>
+    <p class="lockup"><span class="a">Janny</span><span class="b">Vázquez</span></p>
+    <p class="h2demo">Estudiante de <em>Psicología</em>, curiosa por oficio.</p>
+  </div>
+
+  <div class="opt f4">
+    <div class="tag"><span class="num">4</span><span class="name">Bricolage Grotesque</span>
+      <span class="desc">Sans display moderna y amable. Más “creadora de contenido”.</span></div>
+    <p class="lockup"><span class="a">Janny</span><span class="b">Vázquez</span></p>
+    <p class="h2demo">Estudiante de <em>Psicología</em>, curiosa por oficio.</p>
+  </div>
+
+  <div class="opt f5">
+    <div class="tag"><span class="num">5</span><span class="name">Syne</span>
+      <span class="desc">Geométrica con carácter artístico. Atrevida, distinta.</span></div>
+    <p class="lockup"><span class="a">Janny</span><span class="b">Vázquez</span></p>
+    <p class="h2demo">Estudiante de <em>Psicología</em>, curiosa por oficio.</p>
+  </div>
+
+  <div class="opt f6">
+    <div class="tag"><span class="num">6</span><span class="name">DM Serif Display</span>
+      <span class="desc">Serif elegante y redondeada. Suave, muy legible en grande.</span></div>
+    <p class="lockup"><span class="a">Janny</span><span class="b">Vázquez</span></p>
+    <p class="h2demo">Estudiante de <em>Psicología</em>, curiosa por oficio.</p>
+  </div>
+
+  <div class="opt f7">
+    <div class="tag"><span class="num">7</span><span class="name">Outfit</span>
+      <span class="desc">Sans geométrica minimalista. Limpia, tipo estudio de diseño.</span></div>
+    <p class="lockup"><span class="a">Janny</span><span class="b">Vázquez</span></p>
+    <p class="h2demo">Estudiante de <em>Psicología</em>, curiosa por oficio.</p>
+  </div>
+
+  <div class="opt f8">
+    <div class="tag"><span class="num">8</span><span class="name">Cormorant Garamond</span>
+      <span class="desc">Serif fina y delicada. Muy sutil, aire de libro.</span></div>
+    <p class="lockup"><span class="a">Janny</span><span class="b">Vázquez</span></p>
+    <p class="h2demo">Estudiante de <em>Psicología</em>, curiosa por oficio.</p>
+  </div>
+</div>
+</body>
+</html>
