@@ -404,7 +404,7 @@
 
     // Sin backend todavía: abre el cliente de correo.
     // Para recibirlo en el sitio, cambia esto por Formspree / una API route de Vercel.
-    const to   = 'hola@jannyvazquez.com';
+    const to   = 'psicojannyv@gmail.com';
     const subj = encodeURIComponent('[Web] ' + motivo.value + ' — ' + nombre.value);
     const body = encodeURIComponent(
       nombre.value + ' (' + email.value + ') escribe:\n\n' + mensaje.value

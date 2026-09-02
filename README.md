@@ -193,6 +193,7 @@ Leídos del perfil público el 2026-09-02:
 | Instagram | [@vazquez_janny](https://www.instagram.com/vazquez_janny/) |
 | Facebook | [jannyvazquez19](https://www.facebook.com/jannyvazquez19/) |
 | Universidad | Universidad Bicentenaria de Aragua (UBA) — 5.º semestre de Psicología |
+| Email | psicojannyv@gmail.com |
 | Bio TikTok | 🌸 Estudiante de Psicología \| Ψ · 🧠 Ciencia · Mente · Crecimiento |
 
 ## Pendiente de confirmar con ella
@@ -200,9 +201,6 @@ Leídos del perfil público el 2026-09-02:
 | Dónde | Qué |
 |---|---|
 | Trayectoria | Las materias por semestre son redacción genérica, no un plan de estudios real |
-| Contacto | `hola@jannyvazquez.com` es un placeholder |
-
-Buscar en el proyecto: `hola@jannyvazquez.com`.
 
 ---
 
